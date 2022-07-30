@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id = "@+id/ettitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Add Your title here"
+        android:textSize = "20sp"
+        android:layout_margin="7dp"/>
+
+
+    <EditText
+        android:id = "@+id/etsubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Add Your subtitle here"
+        android:textSize = "20sp"
+        android:layout_margin="7dp"/>
+    <Button
+        android:id = "@+id/btnNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Save Notes"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id = "@+id/rView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop ="10dp"/>
+
+</LinearLayout>
